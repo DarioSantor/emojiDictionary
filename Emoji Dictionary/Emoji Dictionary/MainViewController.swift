@@ -49,7 +49,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     // what goes inside each row???
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = dataModel[indexPath.row]
+        cell.textLabel?.text = "\(dataModel[indexPath.row]) - \(dataModel[indexPath.row].unicodeScalars.first!.properties.name!.capitalized)"
         return cell
     }
     

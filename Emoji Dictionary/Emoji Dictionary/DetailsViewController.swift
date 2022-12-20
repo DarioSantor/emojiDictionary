@@ -28,7 +28,7 @@ extension DetailsViewController {
         emojiImage.textAlignment = .center
         
         definition.translatesAutoresizingMaskIntoConstraints = false
-        definition.text = "fngdfgnfdnfhgmghmnghmnghmghmfghmfgm tyjytjtyj rer rhjgnfgn"
+        definition.text = emojiImage.text?.unicodeScalars.first!.properties.name!.capitalized ?? "Emoji Definition"
         definition.numberOfLines = 0
         definition.font = .systemFont(ofSize: 20)
         definition.textAlignment = .center
