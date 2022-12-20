@@ -10,9 +10,10 @@ import UIKit
 
 class DetailsViewController: UIViewController {
     
-    var emojiImage = UILabel()
-    let definition = UILabel()
+    var emoji = Emoji()
     let dismissButton = UIButton()
+    let emojiImage = UILabel()
+    let definition = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +25,13 @@ class DetailsViewController: UIViewController {
 extension DetailsViewController {
     func style() {
         emojiImage.translatesAutoresizingMaskIntoConstraints = false
+        emojiImage.text = emoji.character
         emojiImage.font = .systemFont(ofSize: 250)
         emojiImage.textAlignment = .center
         
         definition.translatesAutoresizingMaskIntoConstraints = false
-        definition.text = emojiImage.text?.unicodeScalars.first!.properties.name!.capitalized ?? "Emoji Definition"
+        definition.text = "The \(emoji.character) emoji is a \(emoji.definition). It was made in \(emoji.year) and I gave it a \(emoji.rating)."
+//        definition.text = emojiImage.text?.unicodeScalars.first!.properties.name!.capitalized ?? "Emoji Definition"
         definition.numberOfLines = 0
         definition.font = .systemFont(ofSize: 20)
         definition.textAlignment = .center

@@ -13,6 +13,7 @@
 		F2083ECD2951C16C00ED1201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2083ECB2951C16C00ED1201 /* LaunchScreen.storyboard */; };
 		F2083ED62951DAEA00ED1201 /* UIViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2083ED52951DAEA00ED1201 /* UIViewConstraints.swift */; };
 		F2083ED82951E10300ED1201 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2083ED72951E10300ED1201 /* DetailsViewController.swift */; };
+		F2083EDB295222B800ED1201 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2083EDA295222B800ED1201 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F2083ECE2951C16C00ED1201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2083ED52951DAEA00ED1201 /* UIViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewConstraints.swift; sourceTree = "<group>"; };
 		F2083ED72951E10300ED1201 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F2083EDA295222B800ED1201 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				F2083EC02951C16A00ED1201 /* AppDelegate.swift */,
 				F2083EC42951C16A00ED1201 /* MainViewController.swift */,
 				F2083ED72951E10300ED1201 /* DetailsViewController.swift */,
+				F2083EDA295222B800ED1201 /* Emoji.swift */,
 			);
 			path = "Emoji Dictionary";
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2083EDB295222B800ED1201 /* Emoji.swift in Sources */,
 				F2083EC52951C16A00ED1201 /* MainViewController.swift in Sources */,
 				F2083ED62951DAEA00ED1201 /* UIViewConstraints.swift in Sources */,
 				F2083EC12951C16A00ED1201 /* AppDelegate.swift in Sources */,

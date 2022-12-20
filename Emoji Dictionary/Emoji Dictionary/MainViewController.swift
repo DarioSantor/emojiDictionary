@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     var tableView = UITableView()
-    let dataModel = ["🚓", "🎮", "⛪️", "🔋", "👻", "🏎"]
+    let dataModel = getEmojis()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,13 +49,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     // what goes inside each row???
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = "\(dataModel[indexPath.row]) - \(dataModel[indexPath.row].unicodeScalars.first!.properties.name!.capitalized)"
+        cell.textLabel?.text = dataModel[indexPath.row].character + " - " + dataModel[indexPath.row].definition
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailsVC = DetailsViewController()
-        detailsVC.emojiImage.text = dataModel[indexPath.row]
+        let selectedEmoji = dataModel[indexPath.row]
+        detailsVC.emoji = dataModel[indexPath.row]
         detailsVC.modalPresentationStyle = .fullScreen
         self.present( detailsVC,  animated: true,  completion: nil)
     }
