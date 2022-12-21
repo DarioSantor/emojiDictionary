@@ -55,7 +55,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailsVC = DetailsViewController()
-        let selectedEmoji = dataModel[indexPath.row]
         detailsVC.emoji = dataModel[indexPath.row]
         detailsVC.modalPresentationStyle = .fullScreen
         self.present( detailsVC,  animated: true,  completion: nil)
